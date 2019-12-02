@@ -17,7 +17,7 @@ class MahasiswaController extends Controller
     {
         // $mahasiswa = DB::table('mahasiswa')->get();
         $mahasiswa = Mahasiswa::all();
-        return view('mahasiswa/index' ,['mahasiswa'=> $mahasiswa]);
+        return view('mahasiswa.index' ,['mahasiswa'=> $mahasiswa]);
     }
 
     /**
